@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Neue', cursive, sans-serif; /* Use Comic Neue as a more universally supported font */
   background-color: #f0f8ff;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -29,7 +29,7 @@ html, body {
   text-align: center;
   box-sizing: border-box;
   line-height: 1.6;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Neue', cursive, sans-serif;
 }
 
 .header h1 {
