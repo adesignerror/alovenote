@@ -38,6 +38,18 @@ html, body {
   margin: 20px 0;
 }
 
+#gif-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#random-gif {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
 .footer p {
   color: #ff69b4;
   font-size: 1.2rem;
