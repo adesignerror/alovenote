@@ -22,14 +22,16 @@
         </div>
       </div>
       <div class="footer">
-        <p>🍰 Yours forever, Damien</p>
+        <p>🥧 Yours forever, Damien</p>
       </div>
     </div>
   </div>
 
   <script>
     const apiKey = 'khcqh6Fwvh8WhSSH4XrXwPBPto30P2AQ';
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=funny dog&rating=g`;
+    const isMobile = window.innerWidth <= 800;
+    const tag = isMobile ? 'funny dog phone' : 'funny dog computer';
+    const url = `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=${tag}&rating=g`;
 
     fetch(url)
       .then(response => response.json())
