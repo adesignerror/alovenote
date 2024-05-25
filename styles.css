@@ -8,6 +8,7 @@ html, body {
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -110,4 +111,20 @@ body::after {
 @keyframes slide {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
+}
+
+/* Style for refresh button */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3c92;
 }
