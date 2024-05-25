@@ -14,12 +14,30 @@
       </div>
       <div class="content">
         <p>Hey Hottie,</p>
-        <p>You always make me laugh and smile, even from miles away. I miss our silly moments and your cute sense of humor. I built this website because why the fuck not, and also to remind you how much I LOVE you. Thinking about all the fun we'll have when we're together again. And cream pies. Until then, stay amazing and keep making me smile.</p>
+        <p>You always make me laugh and smile, even from miles away. I miss our silly moments and your cute sense of humor.</p>
+        <p>I built this website because why the fuck not, and also to remind you how much I LOVE you. And cream pies</p>
+        <p>Thinking about all the fun we'll have when we're together again. And cream pies. Until then, stay amazing and keep making me smile.</p>
+        <div id="gif-container">
+          <img id="random-gif" src="" alt="Random GIF">
+        </div>
       </div>
       <div class="footer">
         <p>🍰 Yours forever, Damien</p>
       </div>
     </div>
   </div>
+
+  <script>
+    const apiKey = 'khcqh6Fwvh8WhSSH4XrXwPBPto30P2AQ';
+    const url = `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=funny dog&rating=g`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const gifUrl = data.data.images.original.url;
+        document.getElementById('random-gif').src = gifUrl;
+      })
+      .catch(error => console.error('Error fetching GIF:', error));
+  </script>
 </body>
 </html>
