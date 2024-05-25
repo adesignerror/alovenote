@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Comic Neue', cursive, sans-serif; /* Use Comic Neue as a more universally supported font */
+  font-family: 'Comic Neue', cursive, sans-serif;
   background-color: #f0f8ff;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -99,4 +99,13 @@ button {
 
 button:hover {
   background-color: #ff3c92;
+}
+
+/* Style for navicon */
+.navicon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
 }
